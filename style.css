@@ -1,0 +1,183 @@
+/* GERAL */
+
+:root {
+  /* Definindo a raiz do HTML como 10px */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: #f7f7f7;
+  display: grid;
+  gap: 6rem;
+  justify-items: center;
+  margin-top: 6rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* REMOVENDO ESTILOS PADRÃO DE CADA TAG */
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0px;
+}
+
+/* VALORES DOS PARÁGRAFOS */
+p {
+  font-size: 2rem;
+  line-height: 1.3;
+}
+
+/* CABEÇALHO FORMATOS */
+.header {
+  display: grid;
+  justify-items: center;
+  gap: 6rem;
+}
+
+/* ORGANIZANDO O MENU E COLOCANDO "EFEITOS" */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.menu a {
+  font-size: 1.4rem;
+  display: block;
+  background: #ffffff;
+  padding: 1.5rem 3rem;
+  border-radius: 0.4rem;
+  color: #000000;
+  text-transform: uppercase;
+  border: 0.2rem solid #fff;
+}
+
+.menu a:hover {
+  border-color: #e21;
+}
+
+/* ORGANIZANDO O CONTEÚDO PRINCIPAL */
+.conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 100rem;
+}
+
+/* PRIMEIRO "QUADRO" (BICICLETAS FEITAS A MÃO) */
+
+.introducao {
+  background: #fff;
+  padding: 4rem;
+  text-align: right;
+  position: relative;
+  display: grid;
+  gap: 2rem;
+  align-content: center;
+  justify-items: end;
+}
+
+.introducao h1 {
+  font-size: 3.2rem;
+}
+
+.introducao::before {
+  /* CRIANDO A BARRINHA VERMELHA SEM ACRESCENTAR TAG NO HTML, UTILIZANDO SOMENTE CSS */
+  content: "";
+  width: 6rem;
+  height: 0.4rem;
+  background: #e21;
+  position: absolute;
+  top: 3rem;
+  right: -3rem;
+}
+
+.botao {
+  font-size: 1.4rem;
+  background: #e21;
+  color: #fff;
+  padding: 1.5rem 3rem;
+  border-radius: 4rem;
+  text-transform: uppercase;
+}
+
+.botao:hover {
+  /* ADICIONANDO UM "EFEITO" AO PASSAR O MOUSE NO BOTÃO */
+  background-color: #900;
+}
+
+/* ORGANIZANDO O SUBTITULO E ADICIONANDO IMAGEM AO FUNDO (ESTILO) */
+.subtitulo {
+  font-size: 6.4rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.2);
+  text-align: right;
+  padding: 4rem;
+  align-self: center;
+
+  background-image: url("./img/onda.svg");
+}
+
+ul h3 {
+  font-size: 2rem;
+}
+
+/* ORGANIZANDO A CAIXA DA SEGUNDA COLUNA E SEGUNDA LINNHA */
+.vantagens {
+  background: #fff;
+  padding: 4rem;
+}
+
+/* ORGANIZANDO OS ELEMENTOS DENTRO DA CAIXA */
+.vantagens-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem 2rem;
+  padding: 2rem;
+  /*  Caso não queira deixar que o efeito abaixo transpareça que está empurrando o elemento
+  border-left: 0.4rem solid transparent;
+   */
+}
+
+.vantagens-item:hover {
+  /* ADICIONANDO UM "EFEITO" AO PASSAR O MOUSE NAS OPÇÕES */
+  border-left: 0.4rem solid #e21;
+}
+
+.vantagens-item:nth-child(odd) {
+  /* COLOCANDO CORES DE CINZA EM ELEMENTOS ÍMPARES */
+  background: #f7f7f7;
+}
+
+.vantagens-item p {
+  /* DEFININDO A COLUNA DOS PARAGRÁFOS DENTRO DA CAIXA DE VANTAGEM */
+  grid-column: 2;
+}
+
+/* RODAPÉ DO SITE */
+.rodape {
+  background: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 4rem;
+
+  /* MANEIRA DE NÃO FAZER O SITE ESTOURAR PARA OS LADOS E NÃO CRIAR BARRA DE ROLAGEM HORIZONTAL */
+  box-sizing: border-box;
+}

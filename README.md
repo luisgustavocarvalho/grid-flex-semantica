@@ -1,7 +1,8 @@
 <h1> Projeto Bikcraft</h1>
 <strong> Bikcraft</strong> é um site desenvolvido para apresentar bicicletas feitas à mão, com foco em destacar suas funcionalidades e vantagens exclusivas. O projeto foi criado utilizando boas práticas de desenvolvimento web, como semântica e estilização moderna, para garantir acessibilidade e uma experiência de usuário aprimorada.
 
-<img src="">
+<h2>Preview do Site</h2>
+<img src="https://raw.githubusercontent.com/luisgustavocarvalho/grid-flex-semantica/refs/heads/main/img/visual-site.jpeg">
 
 <h2>Apresentação do produto</h2>
 <p> Informações detalhadas sobre a bicicleta <b>"Nimbus Stark"</b> e seus recursos exclusivos.</p>

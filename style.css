@@ -109,6 +109,11 @@ p {
   right: -3rem;
 }
 
+.introducao-cover img {
+  object-fit: cover;
+  height: 100%;
+}
+
 .botao {
   font-size: 1.4rem;
   background: #e21;
@@ -133,6 +138,8 @@ p {
   align-self: center;
 
   background-image: url("./img/onda.svg");
+
+  /* word-break: break-all; PARA QUEBRAR PALAVRA */
 }
 
 ul h3 {
@@ -180,4 +187,52 @@ ul h3 {
 
   /* MANEIRA DE NÃO FAZER O SITE ESTOURAR PARA OS LADOS E NÃO CRIAR BARRA DE ROLAGEM HORIZONTAL */
   box-sizing: border-box;
+}
+
+@media (max-width: 1000px) {
+  .conteudo-vantagem {
+    grid-template-columns: 1fr;
+  }
+
+  .subtitulo {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    gap: 3rem;
+    margin-top: 2rem;
+  }
+
+  .header {
+    gap: 3rem;
+  }
+
+  .conteudo {
+    grid-template-columns: 1fr;
+  }
+
+  .introducao {
+    text-align: left;
+    justify-items: start;
+  }
+
+  .introducao::before {
+    display: none;
+  }
+
+  .subtitulo {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .subtitulo {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
 }
